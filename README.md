@@ -2,8 +2,8 @@
 Python script that converts POSCAR and CONTCAR that I use in my project to .xyz files. If your POSCAR or CONTCAR looks generally like this, you can use this script too (an example)
 
 __________
-C Cu
-   1.00000000000000     
+```C Cu```
+```   1.00000000000000 ```
     24.6914512445513985    0.0000000000000000    0.0000000000000000
      7.4065517955292197   12.8319727856189001    0.0000000000000000
      0.0000000001313560    0.0000000000558372   10.0000000000000000
