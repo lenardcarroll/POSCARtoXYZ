@@ -1,4 +1,5 @@
 import numpy as np
+import argparse
 
 parser = argparse.ArgumentParser()
 #Cheat sheet of arguments to be used with the script
