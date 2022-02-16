@@ -24,7 +24,7 @@ __________
 
 ```  0.0000014535230193  0.1662982778370221  0.0000000000000000   F   F   F```
 
-```  0.0999945701665865  0.9996151459185185 ...```
+```  0.0999945701665865  0.9996151459185185  0.0000000000000000   F   F   F```
 
 ```  ...```
 
@@ -33,7 +33,7 @@ __________
 ```  ...```
 _________
 
-The first line contains the atoms, the second line the scaling factor or lattice constant, lines 3-5 the cell vectors, line 6 the atoms again, line 7 the number of atoms for each atom type, lines 8 and 9 more about the coordinates set up and then from line 10 onwards it is coordinates.
+The first line contains some information, the second line the scaling factor or lattice constant, lines 3-5 the cell vectors, line 6 the atoms again, line 7 the number of atoms for each atom type, lines 8 and 9 more about the coordinates set up and then from line 10 onwards it is coordinates.
 
 If your file is like this, you can use the script as follows:
 
