@@ -33,7 +33,7 @@ __________
 ```  ...```
 _________
 
-The first line contains some information, the second line the scaling factor or lattice constant, lines 3-5 the cell vectors, line 6 the atoms again, line 7 the number of atoms for each atom type, lines 8 and 9 more about the coordinates set up and then from line 10 onwards it is coordinates.
+The first line contains some information, the second line the scaling factor or lattice constant, lines 3-5 the cell vectors, line 6 the type of atoms, line 7 the number of atoms for each atom type, lines 8 and 9 more about the coordinates set up and then from line 10 onwards it is coordinates.
 
 If your file is like this, you can use the script as follows:
 
