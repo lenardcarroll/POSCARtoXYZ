@@ -13,13 +13,6 @@ content = f.readlines()
 
 #Get all atoms
 Atoms = content[5].split()
-#Get scaling factor, should be 1 for cartesian coordinates
-ScaleFactor = float(content[1])
-#Get vectors, which we won't use, but is helpful
-Vectors = []
-for i in range(2,5):
-    Vectors.append(content[i].split())
-#Find how many atoms there are for each type
 AtomTot = content[6].split()
 
 #Get total number of atoms
@@ -31,14 +24,6 @@ for i in AtomTot:
 AtomCoords = []
 for i in range(9,sumAtoms+9):
     AtomCoords.append([float(content[i].split()[0]),float(content[i].split()[1]),float(content[i].split()[2])])
-
-#Vector multiplied by scaling factor. Again not necessary, but was used in prior scripts.
-VectorsAdj = []
-for i in Vectors:
-    VectorsAdj.append([float(i[0])*ScaleFactor,float(i[1])*ScaleFactor,float(i[2])*ScaleFactor])
-
-Vectors = []
-NewAtoms = []
 
 #Write output file
 f = open(args.output,"w")
