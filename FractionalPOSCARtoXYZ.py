@@ -37,9 +37,6 @@ VectorsAdj = []
 for i in Vectors:
     VectorsAdj.append([float(i[0])*ScaleFactor,float(i[1])*ScaleFactor,float(i[2])*ScaleFactor])
 
-Vectors = []
-NewAtoms = []
-
 #Write output file
 f = open(args.output,"w")
 #Write number of atoms and a title. Needed for XYZ file
