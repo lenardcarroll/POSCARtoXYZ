@@ -1,8 +1,8 @@
 # POSCARtoXYZ
-Python script that converts POSCAR and CONTCAR that I use in my project to .xyz files. If your POSCAR or CONTCAR looks generally like this, you can use this script too (an example)
+Python script that converts simple POSCAR and CONTCAR files that I use in my project to .xyz files. If your POSCAR or CONTCAR looks generally like this, you can use this script too (an example)
 
 __________
-```C Cu```
+```Title```
 
 ```   1.00000000000000 ```
     
@@ -33,10 +33,15 @@ __________
 ```  ...```
 _________
 
-The first line contains some information, the second line the scaling factor or lattice constant, lines 3-5 the cell vectors, line 6 the type of atoms, line 7 the number of atoms for each atom type, lines 8 and 9 more about the coordinates set up and then from line 10 onwards it is coordinates.
+The first line is the title, the second line the scaling factor or lattice constant, lines 3-5 the cell vectors, line 6 the type of atoms, line 7 the number of atoms for each atom type, lines 8 and 9 more about the coordinates setup and then from line 10 onwards it is coordinates.
 
-If your file is like this, you can use the script as follows:
+If you have cartesian coordinates in your POSCAR file, use:
 
 ```
 python POSCARtoXYZ.py -inp <INPUTFILENAME> -out <OUTPUTFILENAME>
+```
+
+If your POSCAR file contains fractional coordinates, rather use:
+```
+python FractionalPOSCARtoXYZ.py -inp <INPUTFILENAME> -out <OUTPUTFILENAME>
 ```
